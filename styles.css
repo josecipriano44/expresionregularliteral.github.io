@@ -1,0 +1,95 @@
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #7f7fd5, #86a8e7, #91eae4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Animación del contenedor */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Título */
+  h1 {
+    font-size: 1.8rem;
+    color: #7f7fd5;
+    margin-bottom: 1rem;
+  }
+  
+  /* Campo de texto */
+  input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 1rem 0;
+    font-size: 1rem;
+    border: 2px solid #7f7fd5;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #86a8e7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+  }
+  
+  /* Botones */
+  .btn {
+    background: #7f7fd5;
+    color: white;
+    padding: 10px 20px;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn:hover {
+    background: #86a8e7;
+    transform: translateY(-2px);
+  }
+  
+  /* Mensajes de validación */
+  .message {
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: #7f7fd5;
+  }
+  
+  .message.success {
+    color: #4caf50;
+  }
+  
+  .message.error {
+    color: #e74c3c;
+  }
+  
